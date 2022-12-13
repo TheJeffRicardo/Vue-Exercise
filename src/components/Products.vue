@@ -1,7 +1,7 @@
 <template>
     <h1>This is the Product Page</h1>
     <div v-for="item in products" :key="item">
-        <p>{{item.name}}</p>
+        <p>{{item.name}} {{item.surname}}</p>
     </div>
 </template>
 <script> 
@@ -11,19 +11,24 @@ export default{
         return {
             products: [
                 {
-                    name: 'Konke'
+                    name: 'Konke',
+                    surname: 'Malindi'
                 },
                 {
-                    name: 'Jeff'
+                    name: 'Jeff',
+                    surname: 'Ricardo'
                 },
                 {
-                    name: 'Jack'
+                    name: 'Jack',
+                    surname: 'Titanio'
                 },
                 {
-                    name: 'Kitty'
+                    name: 'Kitty',
+                    surname: 'Tom'
                 },
                 {
-                    name: 'Adam'
+                    name: 'Adam',
+                    surname: 'Cole'
                 },
             ]
         }

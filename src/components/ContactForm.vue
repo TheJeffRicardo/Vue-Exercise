@@ -2,18 +2,23 @@
     <h1>This is the Contact Form</h1>
     <form>
         <label for="">Name:</label>
-        <input type="text">
+        <input v-model="message">
         <label for="">Surname:</label>
-        <input type="text">
+        <input v-model="message">
         <label for="">Email:</label>
-        <input type="text">
-        <button type="submit">Submit</button>
+        <input v-model="message">
+        <button v-on:click.prevent='submit'>Submit</button>
     </form>
 </template>
 
 <script>
 export default {
-  name: 'contact'
+  name: 'contact',
+  method: {
+    submit: function(){
+      console.log(`Hello Humans`)
+}
+  }
 }
 </script>
 
